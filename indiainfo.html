@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discover India</title>
+<style>
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:#f0f2f5;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 40px;
+    background:white;
+    align-items:center;
+}
+
+.nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:black;
+    font-weight:600;
+}
+
+
+.hero{
+    background-image: url("incredibleindia.jpg");
+    background-size:cover;
+    height:65vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom: 20px;
+    margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(24, 23, 23);
+}
+
+.container{
+    padding:30px 60px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+    transition:0.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.btn{
+    display:inline-block;
+    background:black;
+    color:white;
+    padding:8px 16px;
+    border-radius:20px;
+    text-decoration:none;
+}
+
+.price{
+    font-weight:bold;
+    margin-top:6px;
+}
+</style>
+</head>
+<body>
+
+<div class="nav">
+    <div><b>Venus Travel</b></div>
+    <div>
+        <a href="#">Discover</a>
+        <a href="#">Community</a>
+        <a href="#">Special Deals</a>
+        <a href="#">About Us</a>
+    </div>
+</div>
+
+<div class="hero">
+       
+</div>
+
+<div class="container">
+<h2>Popular Destinations</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="mumbai.png">
+<div class="card-content">
+<h3>Mumbai</h3>
+<p>City of dreams with marine drive, Bollywood and street food.</p>
+<div class="price">$400</div>
+<a class="btn" href="#">Book Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="goa.jpg">
+<div class="card-content">
+<h3>Goa</h3>
+<p>Beaches, nightlife and Portuguese heritage.</p>
+<div class="price">$320</div>
+<a class="btn" href="#">Book Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="jaipur.jpg">
+<div class="card-content">
+<h3>Jaipur</h3>
+<p>Pink city palaces and royal culture.</p>
+<div class="price">$350</div>
+<a class="btn" href="#">Book Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="kerela.jpg">
+<div class="card-content">
+<h3>Kerala</h3>
+<p>Peaceful backwaters and hill stations.</p>
+<div class="price">$380</div>
+<a class="btn" href="#">Book Now</a>
+</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
